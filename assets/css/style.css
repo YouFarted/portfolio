@@ -1,4 +1,189 @@
-/* Empty baseline */
+:root {
+    --deepblue1: #445877;
+    --prettycyan:    #92ccce;
+    --deepblue: #31343d;
+    --deeperblue: #1c1d21;
+    --litupcyan: #eeeef7;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--deeperblue);
+    background-color: var(--litupcyan);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.75rem 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+    font-size: 4rem;
+}
+  
+h2 {
+    font-size: 3.5rem;
+}
+  
+h3 {
+    font-size: 3rem;
+}
+  
+h4 {
+    font-size: 2.5rem;
+}
+  
+h5 {
+    font-size: 2rem;
+}
+  
+h6 {
+    font-size: 1.5rem;
+}
+  
+p {
+    margin-bottom: 1rem;
+}
+
+header {
+    width: 100%;
+    justify-content: center;
+}
+
+header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--deepblue);
+}
+
+header h1 {
+    justify-content: flex-start;
+    background-color: rgba(146, 204, 206, 0.9);
+    color: var(--deepblue);
+    border-radius: 2rem 2rem 0rem 0rem;
+    padding: 0rem 1.5rem .625rem 1.5rem;
+    margin-left: 0.7rem;
+
+}
+
+header nav {
+    display: flex;
+    margin-right: 6rem;
+    margin-left: 2rem;
+}
+
+header li {
+    list-style: none;
+    margin-right: .6rem;
+}
+
+header a {
+    color: var(--prettycyan);
+    text-decoration: none;
+    border-bottom: .25rem solid var(--prettycyan);
+    padding: .2rem .625rem;
+    
+}
+
+header a:hover {
+    text-shadow: 0rem 0rem .15rem var(--litupcyan);
+    transition: all 0.2s ease-in-out;
+}
+
+.hero {
+    position: relative;
+    height: 28rem;
+    width: 100%; 
+    background-image: url("/images/Glacier-National-Park.png");
+    background-size: cover;
+    background-position: center;
+    border-bottom: .4rem solid var(--deepblue);
+}
+
+
+.hero .openspace   {
+    position: absolute;
+    width: 100%;
+    height: 28rem;
+    background-color: var(--deepblue1);
+    opacity: 0.15;
+    z-index: 0;
+}
+
+h4 {
+    position: absolute;
+    bottom: 3rem;
+    right: 8rem;
+    z-index: 0;
+    text-shadow: 0rem 0rem .9rem var(--deeperblue);
+    color: var(--litupcyan);
+    border-radius: .75rem;
+    padding: .5rem 1rem .625rem 1rem;
+}
+
+.container {
+    width: inherit;
+    margin: 2.5rem 0rem 4rem 0rem;
+    display: flex;
+}
+
+.side {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    color: var(--deepblue1);
+    font-size: 4rem;
+    font-weight: bold;
+    margin-right: 2rem;
+    
+}
+
+.sideHeading {
+    width: 100%;
+    margin-bottom: 40rem;
+    
+}
+
+.sideHeading p {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 3rem;
+}
+
+main {
+    width: 75%;
+    margin-right: 10rem;
+}
+
+#aboutMe {
+    width: 100%;
+    border-left: .3rem solid var(--deepblue1);
+}
+
+/* fix redundencies */
+#aboutMe p {
+    padding-left: 5rem;
+}
+
+#work {
+    width: 100%;
+    border-left: .3rem solid var(--deepblue1);
+}
+
+#contactMe {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-left: .3rem solid var(--deepblue1);
 }

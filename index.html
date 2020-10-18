@@ -3,32 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
     <header>
         <div class="top">
             <h1>Lernantino</h1>
             <nav>
-                <ul>
+                <!--a ul grouping these li's destroys my layout.  Investigate why TODO -->
+                    <!-- page navigation links -->
                     <li><a href="#aboutMe">About Me</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#contactMe">Contact Me</a></li>
-                    <li><a href="">Resume</a></li>
-                </ul>
+                    <li><a href="https://www.web-resume">Resume</a></li> <!-- create a resume on the web and link it here -->
+                
             </nav>
         </div>
-        <div class="hero"></div>
-    </header>
+        <div class="hero">
+            <div class="openspace"></div>
+            <div>
+                <h4>Stuff</h4>
+            </div>
+        </div>
+    </header>   
     <div class="container"> <!-- flexbox will need to own this -->
         <div class="side">
-        </div>
-        <main>
-            <section id="aboutMe">About-Me filler</section>
-            <section id="work">Work filler</section>
-            <section id="contactMe">Contact filler</section>
+            <div class="sideHeading">
+                <p>About</p>
+                <p>Me</p>
+            </div>
+
+            <div class="sideHeading">
+                <P>Work</P>
+            </div>
+
+            <div class="sideHeading">
+                <p>Contact</p>
+                <p>Me</p>
+            </div>
+        </div> <!-- end side headings -->
+
+
+        <main> <!-- Proper content which must line up with the side piece.  I don't like the potential fragility -->
+            <section id="aboutMe">
+                About-Me filler
+            </section>
+
+            <section id="work">
+                Work filler<p></p>
+            </section>
+
+            <section id="contactMe">
+                Contact Filler<p></p>
+            </section>
         </main>
     </div>
+
 </body>
 </html>
