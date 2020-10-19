@@ -102,7 +102,7 @@ header a:hover {
     position: relative;
     height: 28rem;
     width: 100%; 
-    background-image: url("/images/Glacier-National-Park.png");
+    background-image: url("../images/red-brick-wall.jpg");
     background-size: cover;
     background-position: center;
     border-bottom: .4rem solid var(--deepblue);
