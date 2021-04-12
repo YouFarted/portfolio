@@ -144,11 +144,17 @@ main > section > h1 {
   border-right: 3px solid;
   font-weight: 700;
   padding-left: 60px;
+  min-width: 250px;
   flex: 1;
   color: var(--deepblue1);
 }
 
-main > section > div {
-    flex: 4;
+li, ul {
+    padding-left: 10px;
+    list-style-type: square;
 }
 
+
+main > section > ul {
+    flex: 4;
+}
