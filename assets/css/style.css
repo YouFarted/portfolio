@@ -158,3 +158,54 @@ li, ul {
 main > section > ul {
     flex: 4;
 }
+
+#tricktrivia {
+    width:1093px;
+    height:951px;
+    background-image: url("../images/tricktrivia.PNG");
+}
+
+#joia {
+    width:900px;
+    height:500px;
+    background-image: url("../images/joia.PNG");
+}
+
+#eat-burgers {
+    width:900px;
+    height:500px;
+    background-image: url("../images/burgers.PNG");
+    white-space: nowrap;
+}
+
+#note-taker {
+    width:900px;
+    height:500px;
+    background-image: url("../images/notes.PNG");
+    white-space: nowrap;
+}
+
+
+.sample-work div {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-shadow: 1px 1px 0px #ff0000;
+}
+
+/*
+ these colors are chosen carefully to be visible
+ even over the images - still, I used a support selector
+ because text-stroke and text-fill-color are only supported
+ on some browsers
+ */
+@supports (-webkit-text-stroke: 1px black) {    
+    .sample-work h1 {
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: var(--prettycyan);
+    }
+
+    .sample-work h3 {
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: var(--prettycyan);
+    }
+  }
